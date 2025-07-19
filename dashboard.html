@@ -1,42 +1,19 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Dashboard - GabCrypto</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f6fb;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      height: 100vh;
-      justify-content: center;
-    }
-    h1 {
-      color: #004aad;
-      margin-bottom: 20px;
-    }
-    p {
-      font-size: 18px;
-      color: #444;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <title>GabCrypto - Tableau de bord</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Bienvenue sur GabCrypto</h1>
-  <p>Vous êtes connecté avec succès.</p>
-  <script>
-    const email = localStorage.getItem('gabcrypto_email');
-    if (email) {
-      const welcome = document.createElement('p');
-      welcome.innerText = "Email utilisé : " + email;
-      document.body.appendChild(welcome);
-    }
-  </script>
+  <div class="navbar">
+    <a href="dashboard.html">Accueil</a>
+    <a href="wallet.html">Portefeuille</a>
+    <a href="p2p.html">P2P</a>
+    <a href="retrait.html">Retrait</a>
+    <a href="historique.html">Historique</a>
+  </div>
+  <h2>Bienvenue sur GabCrypto</h2>
+  <p>Votre solde total : 0.00 USDT</p>
 </body>
 </html>
